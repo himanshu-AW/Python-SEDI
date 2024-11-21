@@ -2,5 +2,5 @@
 # e.g : 'this is a string' output should be like ''this' 'is' 'a' 'string''
 
 strr = input("Enter a string: ")
-words = strr.split(" ")
-print("-".join(words))
+# words = strr.split(" ")
+print("-".join(strr.split(" ")))
