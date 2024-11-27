@@ -58,6 +58,8 @@ class B(A):
 
 # b = B()
 
+
+# Abstraction 
 from abc import ABC,abstractmethod
 class Car(ABC):
     @abstractmethod
@@ -71,12 +73,20 @@ class Car(ABC):
         print("Your car is accelerating.")
 
 class Honda_City(Car):
-    def color():
+    def color(slef):
         print("Honda city of White color.")
-    def model():
+    def model(slef):
         print("Model : November 2024 ")
     def accelerate(self):
         return super().accelerate()
+    def isAutomatic(slef,automatic=False):
+        if(automatic):
+            print("Honda City Car is Automatic")
+        else:
+            print("Honda City Car is Manual")
     
 hc = Honda_City()
-    
+hc.color()
+hc.model()
+hc.accelerate()
+hc.isAutomatic(True)
